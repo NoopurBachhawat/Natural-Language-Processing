@@ -1,0 +1,14 @@
+import nltk
+from nltk.tokenize import sent_tokenize, word_tokenize
+
+nltk.download('punkt')
+
+text = input("Enter your text: ")
+
+sentences = sent_tokenize(text)
+print("Sentence Tokenization:")
+print(sentences)
+
+print("\nWord Tokenization:")
+words = word_tokenize(text)
+print(words)
