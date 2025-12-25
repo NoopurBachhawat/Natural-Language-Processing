@@ -1,0 +1,18 @@
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.util import bigrams
+
+nltk.download('punkt')
+
+text = input("Enter your text: ")
+
+words = word_tokenize(text)
+
+bigram_list = list(bigrams(words))
+
+print("\nTokens:")
+print(words)
+
+print("\nBigrams:")
+for bg in bigram_list:
+    print(bg)
